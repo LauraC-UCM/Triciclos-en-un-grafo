@@ -26,20 +26,36 @@ Supongamos que los datos del grafo se encuentran repartidos en múltiples cheros
 1. Se puede comenzar suponiendo que el grafo de partida, es decir, la lista de aristas que lo representa, está simplicada. Es decir, no tiene repeticiones, ni aristas de un nodo a sí mismo. Una vez resuelto el problema con esta restricción, no es difícil pasar al caso general.
 
 2. Primero construimis la lista de adjacencias considerandos nodos posteriores:
-A [B, C, D, F ]
-B [C]
-C []
-D [F ]
-F []
-Supón que tenemos la lista de adyacencia de un nodo. Si nos jamos en la de la arista A, su lista de adyacencia es {B, C, D, F }. A este nodo le podemos asociar la lista
-[(( A , B ) , exists ) ,
-(( A , C ) , exists ) ,
-(( A , D ) , exists ) ,
-(( A , F ) , exists ) ,
-(( B , C ) , ( pending , A )) ,
-(( B , D ) , ( pending , A )) ,
-(( B , F ) , ( pending , A )) ,
-(( C , D ) , ( pending , A )) ,
-(( C , F ) , ( pending , A )) ,
-(( D , F ) , ( pending , A ))]
-Observa que las aristas están ordenadas lexicográcamente.
+
+    A [B, C, D, F ]
+
+    B [C]
+
+    C []
+
+    D [F ]
+
+    F []
+
+    Supón que tenemos la lista de adyacencia de un nodo. Si nos jamos en la de la arista A, su lista de adyacencia es {B, C, D, F }. A este nodo le podemos asociar la lista
+    [(( A , B ) , exists ) ,
+
+    (( A , C ) , exists ) ,
+
+    (( A , D ) , exists ) ,
+
+    (( A , F ) , exists ) ,
+
+    (( B , C ) , ( pending , A )) ,
+
+    (( B , D ) , ( pending , A )) ,
+
+    (( B , F ) , ( pending , A )) ,
+
+    (( C , D ) , ( pending , A )) ,
+
+    (( C , F ) , ( pending , A )) ,
+
+    (( D , F ) , ( pending , A ))]
+
+    Observa que las aristas están ordenadas lexicográcamente.
