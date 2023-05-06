@@ -10,12 +10,14 @@ Los triciclos, o más formalmente 3-ciclos, son un elemento básico en el análi
 Ejemplo Consideremos el siguiente grafo:
 
 Un posible conjunto de aristas que lo dene es:
-{(B, B), (B, A), (C, A), (A, B), (A, D), (B, C), (F, A), (F, D)}
-y el conjunto de los 3-ciclos del grafo son:
-{(A, B, C), (D, A, F )}
-(Para más información consúltese la pista 1.) (Para más información consúltese la pista 2.)
 
-## 2 Datos en múltiples cheros
+    {(B, B), (B, A), (C, A), (A, B), (A, D), (B, C), (F, A), (F, D)}
+    
+y el conjunto de los 3-ciclos del grafo son:
+
+        {(A, B, C), (D, A, F )}
+
+## 2 Datos en múltiples ficheros
 Considera que los datos, es decir, la lista de las aristas, no se encuentran en un único chero sino en muchos.
 Escribe un programa paralelo que calcule los 3-ciclos de un grafo que se encuentra denido en múltiples cheros de entrada.
 
